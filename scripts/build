@@ -2,4 +2,6 @@
 
 echo "Building..."
 
-spago build
+spago build -u '-g corefn'
+
+pslua --foreign-path . --ps-output output --entry Effect.Ref --lua-output-file dist/Effect.Ref.lua

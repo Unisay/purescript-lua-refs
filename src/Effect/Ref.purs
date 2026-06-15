@@ -58,7 +58,8 @@ foreign import read :: forall s. Ref s -> Effect s
 modify' :: forall s b. (s -> { state :: s, value :: b }) -> Ref s -> Effect b
 modify' = modifyImpl
 
-foreign import modifyImpl :: forall s b. (s -> { state :: s, value :: b }) -> Ref s -> Effect b
+foreign import modifyImpl
+  :: forall s b. (s -> { state :: s, value :: b }) -> Ref s -> Effect b
 
 -- | Update the value of a mutable reference by applying a function
 -- | to the current value. The updated value is returned.

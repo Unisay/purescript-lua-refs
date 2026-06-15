@@ -17,7 +17,5 @@ return {
       end
     end
   end),
-  write = (function(val)
-    return function(ref) return function() ref.value = val end end
-  end)
+  write = (function(val) return function(ref) return function() ref.value = val end end end)
 }

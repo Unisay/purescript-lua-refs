@@ -1,4 +1,0 @@
-[formatter.lua]
-command = "lua-format"
-options = ["--in-place", "--indent-width=2"]
-includes = ["src/**/*.lua"]

@@ -3,6 +3,6 @@ set -euo pipefail
 
 echo "Building..."
 
-spago build -u '-g corefn'
+spago build
 
 pslua --foreign-path . --ps-output output --entry Effect.Ref --lua-output-file dist/Effect.Ref.lua
